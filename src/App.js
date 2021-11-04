@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {ProfilePicture} from "./components/ProfilePicture";
 import {Tabs, Tab} from "./components/Tabs";
@@ -6,7 +5,7 @@ import {Tabs, Tab} from "./components/Tabs";
 function App() {
   return (
     <div className="h-screen bg-gray-900 text-gray-100 flex flex-col items-center justify-center">
-      <ProfilePicture size="small"/>
+      <ProfilePicture size="small" name="Monkey D Luffy"/>
         <div>Monkey D Luffy</div>
         <div>
             <div>
