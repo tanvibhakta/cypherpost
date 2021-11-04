@@ -4,10 +4,11 @@ import {Tabs, Tab} from "./components/Tabs";
 
 function App() {
   return (
-    <div className="h-screen bg-gray-900 text-gray-100 flex flex-col items-center justify-center">
-      <ProfilePicture size="small" name="Monkey D Luffy"/>
-        <div>Monkey D Luffy</div>
-        <div>
+    <div className="h-screen bg-gray-900 text-gray-100 flex items-center justify-center">
+        <div className="container p-4 max-w-xl flex flex-col items-center justify-center">
+      <ProfilePicture name="Monkey D Luffy"/>
+        <div className="pb-4 font-bold">Monkey D Luffy</div>
+        <div className="stats flex justify-between w-full p-4 px-8 text-xs">
             <div>
                 Trusted By: 120
             </div>
@@ -31,6 +32,7 @@ function App() {
         </Tabs>
     {/*    Tab */}
     {/*    Cards */}
+    </div>
     </div>
   );
 }

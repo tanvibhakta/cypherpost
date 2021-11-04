@@ -16,14 +16,14 @@ export const Tabs = (children) => {
     const [active, setActive] = useState(tabNames[0]);
 
     return (
-        <div className="tabs">
-            <div className="tab-header">
-                {tabNames && <ul>
+        <div className="tabs w-full mx-4 p-4">
+            <div className="tab-header w-full py-4 text-gray-400">
+                {tabNames && <ul className="flex justify-between w-full p-4 border-solid border-2 border-gray-700 rounded-md">
                     {tabNames.map(name => {
                             return <li
                                 onClick={() => setActive(name)}
                                 key={name}
-                                className={name === active ? "active" : null}
+                                className={`cursor-pointer ${name === active ? "active text-primary border-solid border-b-2 border-primary" : null}`}
                             >
                                 {name}
                             </li>
@@ -31,7 +31,7 @@ export const Tabs = (children) => {
                     )}
                 </ul>}
             </div>
-            <div className="tab-content">
+            <div className="tab-content px-8">
                 {Object.keys(tabChildren).map(key => {
                     if (key === active)
                         return <div className="tab-child">{tabChildren[key]}</div>
