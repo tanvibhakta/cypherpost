@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {ProfilePicture} from "./components/ProfilePicture";
-import {Tabs} from "./components/Tabs";
+import {Tabs, Tab} from "./components/Tabs";
 
 function App() {
   return (
@@ -20,15 +20,15 @@ function App() {
             </div>
         </div>
         <Tabs>
-            <div label="Gator">
+            <Tab label="Gator">
                 See ya later, <em>Alligator</em>!
-            </div>
-            <div label="Croc">
+            </Tab>
+            <Tab label="Croc">
                 After 'while, <em>Crocodile</em>!
-            </div>
-            <div label="Sarcosuchus">
+            </Tab>
+            <Tab label="Sarcosuchus">
                 Nothing to see here, this tab is <em>extinct</em>!
-            </div>
+            </Tab>
         </Tabs>
     {/*    Tab */}
     {/*    Cards */}
