@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const ProfilePicture = ({size, name}) => {
     return(
             <img
-                className="rounded-lg border-solid border-2 border-primary m-2"
+                className={`rounded-lg border-solid border-2 border-primary ${size==="small"?"mr-2":"m-2"}`}
                 src={`https://via.placeholder.com/${size==="small"?"32":"80"}`}
                 alt={`${name}'s avatar`}
             />
